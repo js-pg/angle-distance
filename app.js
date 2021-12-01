@@ -23,5 +23,5 @@ function updateOutput(){
 	// angle in degrees
 	var angleDeg = Math.atan2(p2.y - p1.y, p2.x - p1.x) * 180 / Math.PI;
 	document.getElementById('angle').innerText = Math.round(angleDeg);
-	document.getElementById('distance').innerText = Math.round(c * 1);
+	document.getElementById('distance').innerText = Math.round(c * 200) + 'mm';
 }
