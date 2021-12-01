@@ -12,7 +12,7 @@ function updateOutput(){
 		x: parseInt(document.getElementById('x2').value),
 		y: parseInt(document.getElementById('y2').value),
 	};
-	
+	//
 	var a = p1.x - p2.x;
 	var b = p1.y - p2.y;
 	var c = Math.sqrt( a*a + b*b );
