@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle and Distance</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            max-width: fit-content;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .point {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 4px;
+        }
+
+        h3 {
+            margin: 5px;
+        }
+
+        button {
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h6>Zane</h6>
+        <h1>Angle and Distance</h1>
+        <hr>
+        <div style="margin: 15px;">
+            <p style="text-align: left; width: 100%">(Origin) Point 1:</p>
+            <div class="flex w-100">
+                <div class="point">
+                    <input placeholder="X coordinate" type="text" name="" id="x1">
+                    <input placeholder="Y coordinate" type="text" name="" id="y1">
+                </div>
+            </div>
+        </div>
+        <div style="margin: 15px;">
+            <p style="text-align: left; width: 100%">(Destination) Point 2:</p>
+            <div class="flex w-100">
+                <div class="point">
+                    <input placeholder="X coordinate" type="text" name="" id="x2">
+                    <input placeholder="Y coordinate" type="text" name="" id="y2">
+                </div>
+            </div>
+        </div>
+        <button onclick="updateOutput()">Calculate</button>
+        <h3>Angle: <span id="angle"></span></h3>
+        <h3>Distance: <span id="distance"></span></h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
