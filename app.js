@@ -25,3 +25,13 @@ function updateOutput(){
 	document.getElementById('angle').innerText = Math.round(angleDeg);
 	document.getElementById('distance').innerText = Math.round(c * 1);
 }
+
+//function to apply class to every element
+function applyClass(className){
+	var elements = document.getElementsByTagName('*');
+	for(var i = 0; i < elements.length; i++){
+		elements[i].className = className;
+	}
+}
+applyClass('p-0');
+applyClass('m-0');
