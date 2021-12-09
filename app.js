@@ -33,5 +33,3 @@ function applyClass(className){
 		elements[i].className = className;
 	}
 }
-applyClass('p-0');
-applyClass('m-0');
